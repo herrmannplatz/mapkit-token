@@ -8,7 +8,7 @@
 ```javascript
 const generate = reqire('mapkit-token')
 
-const key = fs.readFileSync('AuthKey_B1B1B1B1B1.pem')
+const key = fs.readFileSync('AuthKey_B1B1B1B1B1.p8')
 const token = generate(key, 'B1B1B1B1B1', 'A1A1A1A1A1')
 ```
 

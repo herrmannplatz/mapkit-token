@@ -4,7 +4,7 @@ exports[`generate should generate a token 1`] = `
 Object {
   "exp": 3600,
   "iat": 0,
-  "iss": "maps.org.team.id",
+  "iss": "A1A1A1A1A1",
   "origin": "org.team.id",
 }
 `;
@@ -13,6 +13,6 @@ exports[`generate should generate a token without ttl and origin 1`] = `
 Object {
   "exp": 1800,
   "iat": 0,
-  "iss": "maps.org.team.id",
+  "iss": "A1A1A1A1A1",
 }
 `;

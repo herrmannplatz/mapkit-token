@@ -2,19 +2,24 @@
 
 [![npm version](https://badge.fury.io/js/mapkit-token.svg)](https://badge.fury.io/js/mapkit-token) [![Build Status](https://travis-ci.org/herrmannplatz/mapkit-token.svg?branch=master)](https://travis-ci.org/herrmannplatz/mapkit-token)
 
-🗺 Easily generate MapKit authorization tokens.
+🗺 Easily generate [MapKit JS](https://developer.apple.com/documentation/mapkitjs) authorization tokens.
 
 ## Usage
 ```javascript
 const generate = reqire('mapkit-token')
 
-const token = generate('AUTH_KEY', 'KEY_ID', 'TEAM_ID', 1 * 60, 'com.domain.my')
+const cert = fs.readFileSync('AuthKey_B1B1B1B1B1.pem')
+const token = generate(cert, 'B1B1B1B1B1', 'A1A1A1A1A1')
 ```
 
-### `generate(authKey, keyId, teamId[, ttl=30*60, origin=undefined])`
+This generates an authorization token (valid for 30 minutes) which can be used to authorize against the mapkit JS API. See the 
+
+### `generate(authKey, keyId, teamId[, ttl, origin])`
 
 * **authKey**: MapKit Authorization Key
 * **keyId**: MapKit JS Key ID.
 * **teamId**: Apple Developer Team ID.
 * **ttl**: Time to live in seconds. Defaults to 30 minutes.
-* **origin**: Domain restrictions. Optional.
+* **origin**: Domain restrictions. Optional but recommended.
+
+Returns the authorizaton token.

@@ -9,8 +9,8 @@ Date.now = jest.genMockFunction().mockReturnValue(0)
 describe('generate', () => {
   it('should generate a token', () => {
     const authKey = fs.readFileSync('./key.p8')
-    const teamId = 'maps.org.team.id'
-    const keyId = 'c0c0c0'
+    const teamId = 'A1A1A1A1A1'
+    const keyId = 'B1B1B1B1B1'
     const ttl = 60 * 60
     const origin = 'org.team.id'
 
@@ -20,8 +20,8 @@ describe('generate', () => {
 
   it('should generate a token without ttl and origin', () => {
     const authKey = fs.readFileSync('./key.p8')
-    const teamId = 'maps.org.team.id'
-    const keyId = 'c0c0c0'
+    const teamId = 'A1A1A1A1A1'
+    const keyId = 'B1B1B1B1B1'
 
     const token = generate(authKey, keyId, teamId)
     expect(jwt.decode(token)).toMatchSnapshot()
@@ -29,8 +29,8 @@ describe('generate', () => {
 
   it('should throw in case of missing parameters', () => {
     const authKey = fs.readFileSync('./key.p8')
-    const teamId = 'maps.org.team.id'
-    const keyId = 'c0c0c0'
+    const teamId = 'A1A1A1A1A1'
+    const keyId = 'B1B1B1B1B1'
 
     expect(() => generate()).toThrowError()
     expect(() => generate(authKey)).toThrowError()

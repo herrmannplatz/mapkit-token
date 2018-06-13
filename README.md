@@ -8,11 +8,11 @@
 ```javascript
 const generate = reqire('mapkit-token')
 
-const cert = fs.readFileSync('AuthKey_B1B1B1B1B1.pem')
-const token = generate(cert, 'B1B1B1B1B1', 'A1A1A1A1A1')
+const key = fs.readFileSync('AuthKey_B1B1B1B1B1.pem')
+const token = generate(key, 'B1B1B1B1B1', 'A1A1A1A1A1')
 ```
 
-This generates an authorization token (valid for 30 minutes) which can be used to authorize against the mapkit JS API. See the 
+This generates an authorization token (valid for 30 minutes) which can be used to authorize against the mapkit JS API. See the
 
 ### `generate(authKey, keyId, teamId[, ttl, origin])`
 

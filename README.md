@@ -6,7 +6,7 @@
 
 ## Usage
 ```javascript
-const generate = reqire('mapkit-token')
+const generate = require('mapkit-token')
 
 const key = fs.readFileSync('AuthKey_B1B1B1B1B1.p8')
 const token = generate(key, 'B1B1B1B1B1', 'A1A1A1A1A1')

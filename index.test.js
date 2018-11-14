@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken')
 const generate = require('./')
 
 // mock date
-Date.now = jest.genMockFunction().mockReturnValue(0)
+Date.now = jest.fn(() => 0)
 
 describe('generate', () => {
   it('should generate a token', () => {

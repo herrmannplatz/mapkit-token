@@ -1,6 +1,6 @@
 # mapkit-token
 
-[![npm version](https://badge.fury.io/js/mapkit-token.svg)](https://badge.fury.io/js/mapkit-token) [![Build Status](https://travis-ci.org/herrmannplatz/mapkit-token.svg?branch=master)](https://travis-ci.org/herrmannplatz/mapkit-token)
+[![npm version](https://badge.fury.io/js/mapkit-token.svg)](https://badge.fury.io/js/mapkit-token)
 
 > 🗺 Easily generate [MapKit JS](https://developer.apple.com/documentation/mapkitjs) authorization tokens.
 

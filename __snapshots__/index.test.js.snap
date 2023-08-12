@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`generate should generate a token 1`] = `
-Object {
+{
   "exp": 3600,
   "iat": 0,
   "iss": "A1A1A1A1A1",
@@ -10,7 +10,7 @@ Object {
 `;
 
 exports[`generate should generate a token without ttl and origin 1`] = `
-Object {
+{
   "exp": 1800,
   "iat": 0,
   "iss": "A1A1A1A1A1",
